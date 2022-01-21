@@ -11,6 +11,7 @@
 		E91F3B2A279A8D29008D762E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F3B29279A8D29008D762E /* ContentView.swift */; };
 		E91F3B2C279A8D2A008D762E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91F3B2B279A8D2A008D762E /* Assets.xcassets */; };
 		E91F3B2F279A8D2A008D762E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91F3B2E279A8D2A008D762E /* Preview Assets.xcassets */; };
+		E91F3B36279A8D5B008D762E /* TSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F3B35279A8D5B008D762E /* TSCameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E91F3B29279A8D29008D762E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E91F3B2B279A8D2A008D762E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91F3B2E279A8D2A008D762E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E91F3B35279A8D5B008D762E /* TSCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSCameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				E91F3B27279A8D29008D762E /* TS_CameraView_ExampleApp.swift */,
 				E91F3B29279A8D29008D762E /* ContentView.swift */,
+				E91F3B35279A8D5B008D762E /* TSCameraView.swift */,
 				E91F3B2B279A8D2A008D762E /* Assets.xcassets */,
 				E91F3B2D279A8D2A008D762E /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91F3B36279A8D5B008D762E /* TSCameraView.swift in Sources */,
 				E91F3B2A279A8D29008D762E /* ContentView.swift in Sources */,
 				E91F3B28279A8D29008D762E /* TS_CameraView_ExampleApp.swift in Sources */,
 			);
@@ -272,6 +276,7 @@
 				DEVELOPMENT_TEAM = 2S49FR3REP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera access is required to take pictures.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +306,7 @@
 				DEVELOPMENT_TEAM = 2S49FR3REP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera access is required to take pictures.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

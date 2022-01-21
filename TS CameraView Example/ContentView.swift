@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showCameraView = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Show camera") {
+            showCameraView = true
+        }
+        .sheet(isPresented: $showCameraView) {
+            TSCameraView()
+        }
     }
 }
 

@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var photo: UIImage?
+    
     @State private var showCameraView = false
     
     var body: some View {
-        Button("Show camera") {
-            showCameraView = true
+        VStack {
+            if let photo = self.photo {
+                Image(uiImage: photo)
+                    .resizable()
+                    .scaledToFit()
+            }
+            Spacer()
+            Button("Show camera") {
+                showCameraView = true
+            }
         }
         .sheet(isPresented: $showCameraView) {
-            TSCameraView()
+            TSCameraView(photo: $photo, showsCameraView: $showCameraView)
         }
     }
 }

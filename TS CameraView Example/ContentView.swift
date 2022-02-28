@@ -23,6 +23,7 @@ struct ContentView: View {
             Button("Show camera") {
                 showCameraView = true
             }
+            .disabled(!TSCameraView.canCaptureImages)
         }
         .sheet(isPresented: $showCameraView) {
             TSCameraView(photo: $photo, showsCameraView: $showCameraView)

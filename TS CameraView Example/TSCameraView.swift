@@ -9,6 +9,16 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct TSCameraView: UIViewControllerRepresentable {
+    static var canCaptureImages: Bool {
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            return false
+        }
+        if let availableMediaTypes = UIImagePickerController.availableMediaTypes(for: .camera), availableMediaTypes.contains(UTType.image.identifier) {
+            return true
+        }
+        return false
+    }
+    
     @Binding var photo: UIImage?
     
     @Binding var showsCameraView: Bool
